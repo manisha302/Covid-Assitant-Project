@@ -1,1 +1,1 @@
-web: gunicorn mysite/wsgi: CovidAssistant
+web: gunicorn CovidAssistant.wsgi
