@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html { width: 100%; height:100%; overflow:hidden; }
+
+body {
+	width: 50%;
+	height:70%;
+	color: #fff;
+	font-family: 'Helvetica';
+	font-size: 24px;
+	text-align: absolute;
+	letter-spacing:1.2px;
+
+}
+.login {
+	position: absolute;
+	top: 60%;
+	left: 60%;
+	color: #fff;
+	margin: -100px 0 0 -100px;
+	width:400px;
+	height:400px;
+}
+
+.login h1 { color: #ff0000; text-shadow: 0 0 10px rgba(0,0,0,0.55); letter-spacing:1px; text-align:right; }
+
+input {
+	width: 70%;
+	margin-bottom: 10px;
+	background: rgba(0,0,0,0.3);
+	border: none;
+	outline: none;
+	padding: 5px;
+	font-size: 13px;
+	color: red;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}

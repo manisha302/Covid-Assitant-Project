@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type= "text/css" href="{% static '/admin/css/style.css' %}">
+
+<form action="result" method="POST">
+    {% csrf_token %}
+    <input type="text" name="gdp_per_capita" placeholder="gdp_per_capita" required="required" />
+    <input type="text" name="stringency_index" placeholder="stringency_index" required="required" />
+    <input type="text" name="reproduction_rate" placeholder="reproduction_rate" required="required" />
+    <input type="text" name="new_tests_smoothed_per_thousand" placeholder="new_tests_smoothed_per_thousand" required="required" />
+    <input type="text" name="population_density" placeholder="population_density" required="required" />
+    <input type="text" name="population" placeholder="population" required="required" />
+    <input type="text" name="new_tests_per_thousand" placeholder="new_tests_per_thousand" required="required" />
+    <input type="text" name="new_tests_smoothed" placeholder="new_tests_smoothed" required="required" />
+    <input type="text" name="total_tests_per_thousand" placeholder="total_tests_per_thousand" required="required" />
+    <input type="text" name="new_tests" placeholder="new_tests" required="required" />
+    <input type="text" name="tests_per_case" placeholder="tests_per_case" required="required" />
+    <input type="text" name="new_vaccinations" placeholder="new_vaccinations" required="required" />
+
+    <input type="submit" value='predict' >
+</form>
+{% endblock %}
