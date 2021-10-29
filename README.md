@@ -40,7 +40,8 @@ i have attached a image od dataset description from the github repository whose 
 
 ### Decision Tree gave the best results 
 
-
+## Deployment server
+### Used Heroku as a service with **Docker** and Django framework 
 
 https://user-images.githubusercontent.com/70663378/139467059-b8290b77-829f-41c4-9572-99268cfa418f.mp4
 
